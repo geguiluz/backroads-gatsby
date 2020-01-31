@@ -1,7 +1,5 @@
 import React from "react"
 
-export const error = () => {
+export default () => {
   return <div>Hello from error page</div>
 }
-
-export default error

@@ -1,5 +1,6 @@
 import React from "react"
+import Layout from "../components/Layout"
 
 export default () => {
-  return <div>Hello from blog page</div>
+  return <Layout>Hello from blog page</Layout>
 }

@@ -1,10 +1,56 @@
-import React from "react"
+import React, { useState } from "react"
+import { Link } from "gatsby"
+import styles from "../css/navbar.module.css"
+import { MdMenu } from "react-icons/md"
+import links from "../constants/links"
+import socialIcons from "../constants/social-icons"
+import logo from "../images/logo.svg"
 
 const Navbar = () => {
+  const [isOpen, setNav] = useState(false)
+  const toggleNav = () => {
+    setNav(isOpen => !isOpen)
+  }
   return (
-    <div>
-      <h1>I'm a Navbar</h1>
-    </div>
+    <nav className={styles.navbar}>
+      <div className={styles.navCenter}>
+        <div className={styles.navHeader}>
+          <img src={logo} alt="" />
+          <button className={styles.logoBtn} onClick={toggleNav}>
+            <MdMenu className={styles.logoIcon} />
+          </button>
+        </div>
+        <ul
+          className={
+            isOpen
+              ? `${styles.navLinks} ${styles.showNav}`
+              : `${styles.navLinks}`
+          }
+        >
+          {links.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link to={item.path}>{item.text}</Link>
+              </li>
+            )
+          })}
+        </ul>
+        <div className={styles.navSocialLinks}>
+          {socialIcons.map((item, index) => {
+            return (
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.icon}
+              </a>
+            )
+          })}
+        </div>
+      </div>
+    </nav>
   )
 }
 

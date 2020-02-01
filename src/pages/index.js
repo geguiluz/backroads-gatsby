@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
+import "../sass/layout.scss"
 
 export default () => (
   <Layout>

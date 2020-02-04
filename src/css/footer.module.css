@@ -1,4 +1,6 @@
 .footer {
+  /* This margin-top: auto makes sure footer is all the way down if content
+  height of the page is not long enough */
   margin-top: auto;
   background: var(--mainBlack);
   padding: 2rem;

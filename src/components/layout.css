@@ -83,5 +83,7 @@ a {
 main {
   min-height: 100vh;
   display: flex;
+  /* This does exactly the same behavior as a grid */
   flex-direction: column;
+  align-items: stretch;
 }

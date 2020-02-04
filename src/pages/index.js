@@ -1,10 +1,20 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SmpleHero from "../components/SimpleHero"
-import "../sass/layout.scss"
+import SimpleHero from "../components/SimpleHero"
+import Banner from "../components/Banner"
+import { Link } from "gatsby"
 
 export default () => (
   <Layout>
-    <SmpleHero />
+    <SimpleHero>
+      <Banner
+        title="Continue Exploring"
+        info="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni veritatis odit ullam, quod ipsa quibusdam!"
+      >
+        <Link to="/tours" className="btn-white">
+          Explore Tours
+        </Link>
+      </Banner>
+    </SimpleHero>
   </Layout>
 )

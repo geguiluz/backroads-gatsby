@@ -7,7 +7,10 @@ export default () => {
     <Layout>
       hello from tours page!!
       <div>
-        <Button>Hello</Button>
+        <Button color="white" size="big">
+          First Button
+        </Button>
+        <Button color="red">Second Button</Button>
       </div>
     </Layout>
   )

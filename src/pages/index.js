@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import Banner from "../components/Banner"
+import About from "../components/Home/About"
 import { Link } from "gatsby"
 
 export default () => (
@@ -16,5 +17,6 @@ export default () => (
         </Link>
       </Banner>
     </SimpleHero>
+    <About />
   </Layout>
 )

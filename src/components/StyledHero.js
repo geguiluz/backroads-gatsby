@@ -20,6 +20,7 @@ export default styled(StyledHero)`
       : "home"};
   background-position: center;
   background-size: cover;
+  /* If we don't add the following opcacity, it uses a default .99 opacity that fucks everything up */
   opacity: 1 !important;
   display: flex;
   justify-content: center;

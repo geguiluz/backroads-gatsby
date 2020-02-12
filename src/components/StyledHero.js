@@ -13,11 +13,11 @@ const StyledHero = ({ img, className, children, homeFlag }) => {
 }
 
 export default styled(StyledHero)`
-  min-height: ${props => (props.homeFlag ? "calc(100vh - 62px)" : "50")};
+  min-height: ${props => (props.homeFlag ? "calc(100vh - 62px)" : "50vh")};
   background: ${props =>
     props.homeFlag
       ? "linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7))"
-      : "home"};
+      : "none"};
   background-position: center;
   background-size: cover;
   /* If we don't add the following opcacity, it uses a default .99 opacity that fucks everything up */

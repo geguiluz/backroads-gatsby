@@ -32,6 +32,14 @@ function SEO({ title, description }) {
       <Helmet title={`${title} | ${siteTitle}`} htmlAttributes={{ lang: "en" }}>
         <meta name="description" content={description} />
         <meta name="image" content={image} />
+        {/* Facebook card */}
+        <meta name="og:url" content={siteUrl} />
+        <meta name="og:type" content="website" />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="og:description" content={siteDesc} />
+        <meta name="og:image" content={`${siteUrl}${image}`} />
+        <meta name="og:image:width" content="400" />
+        <meta name="og:image:height" content="400" />
         {/* Twitter card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content={twitterUsername} />

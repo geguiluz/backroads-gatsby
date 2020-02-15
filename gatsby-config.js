@@ -16,6 +16,7 @@ module.exports = {
     author: "Joh Doe",
     twitterUsername: "@eguijeep",
     siteUrl: "https://competent-yalow-50f969.netlify.com/",
+    image: "/defaultBcg.jpeg",
   },
   plugins: [
     {

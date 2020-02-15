@@ -14,10 +14,8 @@ module.exports = {
     description:
       "Explore awesome destinations and live the local culture while meeting cool people",
     author: "Joh Doe",
-    data: {
-      name: "john",
-      age: 24,
-    },
+    twitterUsername: "@eguijeep",
+    siteUrl: "https://competent-yalow-50f969.netlify.com/",
   },
   plugins: [
     {
@@ -43,5 +41,6 @@ module.exports = {
     },
     `gatsby-plugin-playground`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

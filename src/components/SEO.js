@@ -32,6 +32,12 @@ function SEO({ title, description }) {
       <Helmet title={`${title} | ${siteTitle}`} htmlAttributes={{ lang: "en" }}>
         <meta name="description" content={description} />
         <meta name="image" content={image} />
+        {/* Twitter card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content={twitterUsername} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${siteUrl}${image}`} />
       </Helmet>
     </div>
   )
